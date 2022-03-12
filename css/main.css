@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  margin-top: 10px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  width: 30px;
+}
+.column-one,
+.column-two,
+.column-three {
+  width: 200px;
+  padding: 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.column-one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5% 5% 0 0;
+  -webkit-border-radius: 5% 5% 0 0;
+  -moz-border-radius: 5% 5% 0 0;
+  -ms-border-radius: 5% 5% 0 0;
+  -o-border-radius: 5% 5% 0 0;
+}
+.column-two {
+  background-color: hsl(184, 100%, 22%);
+}
+.column-three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 5% 5%;
+  -webkit-border-radius: 0 0 5% 5%;
+  -moz-border-radius: 0 0 5% 5%;
+  -ms-border-radius: 0 0 5% 5%;
+  -o-border-radius: 0 0 5% 5%;
+}
+.sedans,
+.suvs,
+.luxury {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.one-content,
+.two-content,
+.three-content {
+  margin: 20px 20px 20px 0;
+}
+.button {
+  text-align: center;
+  width: 55%;
+  padding: 5px;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 12px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 10% 50%;
+  -webkit-border-radius: 10% 50%;
+  -moz-border-radius: 10% 50%;
+  -ms-border-radius: 10% 50%;
+  -o-border-radius: 10% 50%;
+}
+.button-one {
+  color: hsl(31, 77%, 52%);
+}
+.button-two {
+  color: hsl(184, 100%, 22%);
+}
+.button-three {
+  color: hsl(179, 100%, 13%);
+}
+.attribution {
+  margin-top: 15px;
+}
+.button:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+@media (min-width: 605px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    width: 600px;
+    margin: 0;
+  }
+  .column-one {
+    border-radius: 5% 0 0 5%;
+    -webkit-border-radius: 5% 0 0 5%;
+    -moz-border-radius: 5% 0 0 5%;
+    -ms-border-radius: 5% 0 0 5%;
+    -o-border-radius: 5% 0 0 5%;
+  }
+  .column-three {
+    border-radius: 0 5% 5% 0;
+    -webkit-border-radius: 0 5% 5% 0;
+    -moz-border-radius: 0 5% 5% 0;
+    -ms-border-radius: 0 5% 5% 0;
+    -o-border-radius: 0 5% 5% 0;
+  }
+}
